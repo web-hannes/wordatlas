@@ -19,9 +19,9 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent.parent
 PIPE = ROOT / "pipeline"
 CACHE = PIPE / "cache"
-OUT = ROOT / "public" / "data"
+OUT = ROOT / "docs" / "data"
 
-LAUNCH = dt.date(2026, 11, 1)  # puzzle #1; keep in sync with public/js/config.js
+LAUNCH = dt.date(2026, 11, 1)  # puzzle #1; keep in sync with docs/js/config.js
 DAYS = 365
 ROUNDS_PER_DAY = 5
 SEED = 20261122

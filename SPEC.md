@@ -34,7 +34,7 @@ the player taps where it belongs. Score by distance.
       If no word qualifies, skip this anchor.
 5. Schedule: deterministic order of anchors (seeded shuffle), 5 per day,
    precompute 365 days.
-6. Output `public/data/days/{YYYY-MM-DD}.json`:
+6. Output `docs/data/days/{YYYY-MM-DD}.json`:
    { day, rounds: [{ anchor, target, words: [{w, x, y, label}] }] }
    Round coords to 4 decimals. Each file < 20 KB.
 

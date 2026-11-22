@@ -1,4 +1,4 @@
-"""Local dev server for public/ that tells the browser not to cache, so edits and rebuilt data show up on reload."""
+"""Local dev server for docs/ that tells the browser not to cache, so edits and rebuilt data show up on reload."""
 
 import http.server
 import sys
@@ -13,6 +13,6 @@ class NoCache(http.server.SimpleHTTPRequestHandler):
 
 
 port = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
-root = Path(__file__).resolve().parent.parent / "public"
+root = Path(__file__).resolve().parent.parent / "docs"
 print(f"Serving {root} at http://localhost:{port}")
 http.server.ThreadingHTTPServer(("", port), partial(NoCache, directory=str(root))).serve_forever()
