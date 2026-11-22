@@ -1,4 +1,4 @@
-"""Wherd data pipeline: vocabulary -> embeddings -> per-anchor maps -> day files.
+"""Wordatlas data pipeline: vocabulary -> embeddings -> per-anchor maps -> day files.
 
 Run from the repo root:  make data   (or: pipeline/.venv/bin/python pipeline/build.py)
 """

@@ -1,4 +1,4 @@
-/* Wherd: a survey chart of meaning. Lichen paper, navy ink, magenta pin, ultramarine truth. */
+/* Wordatlas: a survey chart of meaning. Lichen paper, navy ink, magenta pin, ultramarine truth. */
 
 :root {
   --paper: #e3eae2;
@@ -158,6 +158,14 @@ svg { display: block; }
 .progress .tier-region { background: var(--t-region); }
 .progress .tier-far { background: var(--t-far); }
 @keyframes dot-pulse { 50% { transform: scale(1.35); } }
+@media (max-width: 400px) {
+  .bar { column-gap: 10px; }
+  .wordmark { font-size: 20px; gap: 4px; }
+  .wordmark svg { width: 20px; height: 20px; }
+  .icon-btn { width: 36px; height: 36px; }
+  .progress { gap: 6px; }
+  .progress li { width: 9px; height: 9px; }
+}
 
 /* Layout ------------------------------------------------------------------- */
 

@@ -13,7 +13,7 @@ document.querySelectorAll('[data-step]').forEach((a) => (a.href = `?day=${shiftD
 await document.fonts.ready;
 try {
   const data = await fetchJSON(`data/days/${day}.json`);
-  document.title = `Wherd debug #${puzzleNumber(day)}`;
+  document.title = `Wordatlas debug #${puzzleNumber(day)}`;
   data.rounds.forEach((r, i) => {
     const card = document.createElement('section');
     card.className = 'dbg-card';

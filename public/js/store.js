@@ -3,11 +3,12 @@
 import { ROUNDS } from './config.js';
 import { shiftDay, utcToday } from './util.js';
 
-const KEY = 'wherd:v1';
+const KEY = 'wordatlas:v1';
+const OLD_KEY = 'wherd:v1'; // the game's earlier name; progress is carried over once
 
 function load() {
   try {
-    const data = JSON.parse(localStorage.getItem(KEY));
+    const data = JSON.parse(localStorage.getItem(KEY) ?? localStorage.getItem(OLD_KEY));
     if (data && typeof data.days === 'object') return data;
   } catch {}
   return { days: {} };

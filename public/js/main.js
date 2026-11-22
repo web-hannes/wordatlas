@@ -376,7 +376,7 @@ function animateCalendar(step) {
 function shareText() {
   const g = store.getDay(app.day);
   const total = g.reduce((s, x) => s + x.p, 0);
-  return `Wherd #${puzzleNumber(app.day)} ${fmt(total)}/5000 ${g.map((x) => tierFor(x.p).emoji).join('')}`;
+  return `Wordatlas #${puzzleNumber(app.day)} ${fmt(total)}/5000 ${g.map((x) => tierFor(x.p).emoji).join('')}`;
 }
 
 function renderStats(dl, s) {
@@ -551,7 +551,7 @@ async function boot() {
   fetchJSON('data/index.json').then((ix) => (app.last = ix.last)).catch(() => {});
   introArt();
   if (!app.daily) {
-    return showEmpty(num < 1 ? 'Wherd starts soon' : 'No map for today yet',
+    return showEmpty(num < 1 ? 'Wordatlas starts soon' : 'No map for today yet',
       'Today’s puzzle isn’t published. Practice maps still work.');
   }
   showIntro();

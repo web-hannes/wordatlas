@@ -1,4 +1,4 @@
-# Wherd — Spec v2
+# Wordatlas — Spec v2
 
 ## Concept
 Daily browser game: "GeoGuessr for meaning". Each round shows a small,
@@ -48,7 +48,7 @@ the player taps where it belongs. Score by distance.
   points = round(1000 * exp(-d / 0.12)). Max 5000/day.
   σ is a constant in config; tune after playtesting.
 - End screen: total, per-round result, share text without spoilers:
-  "Wherd #12 3,840/5000 🟩🟩🟨🟥🟩"
+  "Wordatlas #12 3,840/5000 🟩🟩🟨🟥🟩"
   (≥800 🟩, ≥500 🟨, ≥200 🟧, else 🟥).
 - localStorage (wrapped in try/catch): today's progress, streak, average.
 - Practice mode: random anchors, unlimited.

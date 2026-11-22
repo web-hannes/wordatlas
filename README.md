@@ -1,4 +1,4 @@
-# Wherd
+# Wordatlas
 
 A daily map of meaning: five small word maps, one hidden word each, tap where it belongs. See `SPEC.md`.
 
